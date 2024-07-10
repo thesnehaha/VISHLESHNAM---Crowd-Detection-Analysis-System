@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISHLESHNAM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>VISHLESHNAM: A Video Analytics Solution for Crowd Behaviour Analysis Using Multiple Sensors</h1>
+        <p>Brief overview of the project, its importance, and objectives.</p>
+        <img src="banner.jpg" alt="Crowd Behavior Analysis">
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#home" onclick="showSection('home')">Home</a></li>
+            <li><a href="#about" onclick="showSection('about')">About</a></li>
+            <li><a href="#team" onclick="showSection('team')">Team</a></li>
+            <li><a href="#research" onclick="showSection('research')">Research</a></li>
+            <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+            <li><a href="#faqs" onclick="showSection('faqs')">FAQs</a></li>
+            <li><a href="#analysis" onclick="showSection('analysis')">Analysis</a></li>
+            <li><a href="#signup-popup" onclick="openPopup('signup-popup')">Signup</a></li>
+            <li><a href="#login-popup" onclick="openPopup('login-popup')">Login</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to the VISHLESHNAM project website. This project focuses on developing video analytics solutions for crowd behaviour analysis using multiple sensors.</p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <h3>Project Overview</h3>
+        <p><strong>Project Investigator:</strong> Dr. Debi Prosad Dogra, Associate Professor, Computer Science & Engineering, IIT Bhubaneswar</p>
+        <p><strong>Duration:</strong> February 2024 to February 2027</p>
+        <p><strong>Budget:</strong> Rs. 44.42 Lakhs</p>
+        <p><strong>Funding Agency:</strong> IRDE Dehradun, DRDO</p>
+        <p><strong>Sanction No.:</strong> ECS/IRDE/23-24/008 (CARS)</p>
+        <h3>Objectives</h3>
+        <ul>
+            <li>AI Algorithm Development: Detect suspicious activities of intruders targeting women in various environments.</li>
+            <li>Automatic Alarm Generation: AI-driven methodologies for alarm generation to assist women in distress.</li>
+            <li>Vehicle Surveillance: Detect non-standard or improperly installed number plates within a restricted zone.</li>
+            <li>Crowd Analysis: Develop deep learning models to count males and females in crowds and analyze activities.</li>
+        </ul>
+    </section>
+
+    <section id="team">
+        <h2>Team</h2>
+        <p><strong>Project Investigator:</strong> Dr. Debi Prosad Dogra and Dr.Arif Ahmed Shek</p>
+        <h3>Research Team</h3>
+        <ul>
+            <li>P Sneha</li>
+            <li>Prangya Jena</li>
+            <li>Prerna Pattnaik</li>
+            <!-- Add more team members as needed -->
+        </ul>
+        <h3>Collaborators</h3>
+        <p>XIM University</p>
+    </section>
+
+    <section id="research">
+        <h2>Research</h2>
+        <h3>Methodologies</h3>
+        <ul>
+            <li>AI and Deep Learning: Description of the techniques being developed and used.</li>
+            <li>Multiple Sensors: Information on sensor types and integration with AI systems.</li>
+            <li>Software Development: Overview of the software being developed.</li>
+        </ul>
+        <h3>Publications</h3>
+        <ul>
+            <li>Research Papers: List of published papers related to the project.</li>
+            <li>Conference Presentations: Details on conference presentations and posters.</li>
+            <li>Media Coverage: Links to media articles and coverage.</li>
+        </ul>
+    </section>
+
+    <section id="analysis">
+        <h2>Analysis</h2>
+        <div class="chart-container">
+            <h2>Head Count Chart</h2>
+            <div id="timeFrameHeadCount">Current Time Frame: 0 sec</div>
+            <canvas id="headCountChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h2>Age Distribution Chart</h2>
+            <div id="timeFrameAge">Current Time Frame: 0 sec</div>
+            <canvas id="ageChart"></canvas>
+        </div>
+        <div class="chart-container">
+            <h2>Gender Distribution Chart</h2>
+            <div id="timeFrameGender">Current Time Frame: 0 sec</div>
+            <canvas id="genderChart"></canvas>
+        </div>
+
+    
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><strong>Email:</strong> example@domain.com</p>
+        <p><strong>Phone:</strong> +123 456 7890</p>
+        <p><strong>Office Address:</strong> Address details here</p>
+        <form>
+            <label for="feedback">Leave your feedback:</label>
+            <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="faqs">
+        <h2>FAQs</h2>
+        <ul>
+            <li>Question 1: Answer 1</li>
+            <li>Question 2: Answer 2</li>
+            <!-- Add more FAQs as needed -->
+        </ul>
+    </section>
+
+    <div id="signup-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('signup-popup')">&times;</span>
+            <h2>Signup</h2>
+            <form>
+                <label for="signup-username">Username:</label>
+                <input type="text" id="signup-username" name="signup-username" required>
+                <label for="signup-email">Email:</label>
+                <input type="email" id="signup-email" name="signup-email" required>
+                <label for="signup-password">Password:</label>
+                <input type="password" id="signup-password" name="signup-password" required>
+                <button type="submit">Signup</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="login-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup('login-popup')">&times;</span>
+            <h2>Login</h2>
+            <form>
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="login-username" required>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
