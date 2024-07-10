@@ -12,6 +12,3 @@ Project Features
 Human Detection: Utilizes a deep learning model to detect head count, age, and gender in the crowd.
 Activity Analysis: Analyzes the activity within the crowd for better understanding of crowd dynamics.
 Age Detection: Determines the age range of individuals within the crowd.
-Repository Contents
-Human Detection: The model used for detecting head count, age, and gender in the crowd.
-Vishleshnam: The frontend website for the Vishleshnam system.
